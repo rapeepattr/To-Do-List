@@ -23,10 +23,13 @@ document.querySelector('#push').onclick = function () {
             this.parentNode.remove()
         }
     }
+
     var tasks = document.querySelectorAll('.task')
     for (let index = 0; index < tasks.length; index++) {
         tasks[index].onclick = function() {
             this.classList.toggle('completed')
         }
     }
+
+    document.querySelector('#newtask input').value = ''
 }
